@@ -7,6 +7,8 @@ class StringsAlgo{
         String pat2 = "when";
         String pat3 = "then";
         String pat4 = "our";
+        String txt = "AAAAAAAAAAAA";
+        String patt = "AAA";
         System.out.println("---------------------------------------");
         System.out.println("Rabin-Karp algorithm; pattern: " + pat);
         print(rabinKarp(pat, text, 101));
@@ -18,6 +20,9 @@ class StringsAlgo{
         System.out.println("Rabin-Karp algorithm; pattern: " + pat2);
         print(rabinKarp(pat2, text, 101));
         System.out.println("---------------------------------------");
+        System.out.println("pattern: " + patt + "\ntext: " + txt);
+        print(BM(txt.toCharArray(), patt.toCharArray()));
+
 
     }
 
